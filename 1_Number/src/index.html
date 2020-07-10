@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the Tab -->
+    <title>Ethereum DApp</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          
+         <!-- Title -->
+
+          <h1 class="text-center">Store a Number!</h1>
+          <hr/>
+          <br/>
+          
+          <!-- Loading Page -->
+
+          <div id="loader">
+            <div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;<b>WARNING:</b> Please connect to the Rinkeby Test Network. </div>
+          </div>
+
+          <!-- Processing Page -->
+
+          <div id="processing">
+            <div class="alert alert-success" role="alert"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;<b>SUCCESS:</b> Please accept the MaskMask Transcation. Do not refresh the page. </div>
+          </div>
+
+          <!-- Content Page -->
+
+          <div id="content" class="text-center" style="display: none;">
+
+            <!-- Text -->
+
+            <p> Enter a New Number below </p>
+
+            <!-- form -->
+
+            <form onSubmit="App.setnumberbutton(); return false;" class="" role="form">
+              <div class="form-group" style="display:inline;">
+                <div class="input-group">
+                  <input id="newnumber" class="form-control input-lg" type="number" name="number" value="" min="1" pattern="[0-9]">
+                  </input>
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                  </span>
+                </div>
+              </div>
+            </form>
+
+            <br/>
+
+            <!-- Text -->
+            <p> The Current Number is <b> <span class="StoredNumber"></span></b>.</p>
+
+            <br/>
+            <br/>
+            <br/>
+            
+             <!-- Blue Warning Box-->
+
+            <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;<b>NOTICE:</b> Please be patient if the Rinkeby Test Network runs slowly.</div>
+            
+            <hr>
+
+            <!-- Account Address-->
+            
+            <p id="accountAddress"></p>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
