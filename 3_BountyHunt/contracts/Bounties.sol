@@ -50,15 +50,7 @@ contract Bounties {
   * @param _deadline the unix timestamp after which fulfillments will no longer be accepted
   * @param _data the requirements of the bounty
   */
-  function issueBounty(
-      string memory _data,
-      uint64 _deadline
-  )
-      public
-      payable
-      hasValue()
-      validateDeadline(_deadline)
-      returns (uint)
+  function issueBounty(string memory _data, uint64 _deadline) public payable hasValue() validateDeadline(_deadline) returns (uint)
   {
       bounties.push(Bounty(msg.sender, _deadline, _data, BountyStatus.CREATED, msg.value));
       emit BountyIssued(bounties.length - 1,msg.sender, msg.value, _data);
@@ -70,14 +62,10 @@ contract Bounties {
   * @param _bountyId the index of the bounty to be fufilled
   * @param _data the ipfs hash which contains evidence of the fufillment
   */
-  function fulfillBounty(uint _bountyId, string memory _data)
-    public
-    bountyExists(_bountyId)
-    notIssuer(_bountyId)
-    hasStatus(_bountyId, BountyStatus.CREATED)
-    isBeforeDeadline(_bountyId)
-  {
+  function fulfillBounty(uint _bountyId, string memory _data) public bountyExists(_bountyId) notIssuer(_bountyId) hasStatus(_bountyId, BountyStatus.CREATED) isBeforeDeadline(_bountyId) {
+
     fulfillments[_bountyId].push(Fulfillment(false, msg.sender, _data));
+
     emit BountyFulfilled(_bountyId, msg.sender, (fulfillments[_bountyId].length - 1),_data);
   }
 

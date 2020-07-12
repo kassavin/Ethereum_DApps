@@ -1,6 +1,24 @@
+
+// When importing from React library, you must import React like so ~ import React from 'react' ~ Because React is a default export. 
+// Component is put in curly braces because it is an optional import. And therefore optional imports from the library are put in braces. 
+
 import React, { Component } from "react";
+
+// import the App.css file in our application
+
+import "./App.css";
+
+// import the BountiesContract and Web3
+
 import BountiesContract from "./contracts/Bounties.json";
 import getWeb3 from "./utils/getWeb3";
+
+// The table is using two react-bootstrap-table components so we'll need to import those and also import the react-boostrap-table css.
+
+import BootstrapTable from 'react-bootstrap-table/lib/BootstrapTable';
+import TableHeaderColumn from 'react-bootstrap-table/lib/TableHeaderColumn';
+
+import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 import Button from 'react-bootstrap/lib/Button';
 import Form from 'react-bootstrap/lib/Form';
@@ -11,25 +29,28 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Panel from 'react-bootstrap/lib/Panel';
 
-import BootstrapTable from 'react-bootstrap-table/lib/BootstrapTable';
-import TableHeaderColumn from 'react-bootstrap-table/lib/TableHeaderColumn';
+// There are basically two ways of writing components in React: functional and class components. 
+// A functional component is just a plain JavaScript function which accepts props as an argument and returns a React element.
 
-import "./App.css";
-import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+// A functional component doesn’t have its own state nor use of hooks. 
+  // If you need a state in your component you will either need to create a class component or you lift the state up to the parent component and pass it down the functional component via props.
+  // Another feature which you cannot use in functional components are lifecycle hooks. 
+  // The reason is the same as for state, all lifecycle hooks are coming from the React.Component which you extend from in class components. 
+  // So if you need lifecycle hooks you should probably use a class component.
 
-const etherscanBaseUrl = "https://rinkeby.etherscan.io"
+// A class component requires you to extend from React.Component and create a render function which returns a React element.
+  // Pros of using a class componet like below (as opposed to functional) is use of state and hooks. 
 
 class App extends Component {
+
   constructor(props) {
     super(props)
 
     this.state = {
-      storageValue: 0,
       bountiesInstance: undefined,
       bountyAmount: undefined,
       bountyData: undefined,
       bountyDeadline: undefined,
-      etherscanLink: "https://rinkeby.etherscan.io",
       bounties: [],
       account: null,
       web3: null
@@ -38,6 +59,9 @@ class App extends Component {
     this.handleIssueBounty = this.handleIssueBounty.bind(this)
     this.handleChange = this.handleChange.bind(this)
   }
+
+  // componentDidMount()` is a react lifecycle method which is called just after the component is mounted  we use this react lifecycle event to initiate our web3 instance 
+    // by calling `getWeb3` and also instantiating our contract instance object. This ensures our contract instance and web3 objects are ready for when our application renders.
 
   componentDidMount = async () => {
     try {
@@ -48,8 +72,11 @@ class App extends Component {
       const accounts = await web3.eth.getAccounts();
 
       // Get the contract instance.
+      
       const networkId = await web3.eth.net.getId();
+      
       const deployedNetwork = BountiesContract.networks[networkId];
+      
       const instance = new web3.eth.Contract(
        BountiesContract.abi,
        deployedNetwork && deployedNetwork.address,
@@ -68,12 +95,17 @@ class App extends Component {
     }
   };
 
+  // To subscribe to events we'll add a new function to App.js named addEventListener
+    // Setting up a web3.js events object which will subscribe BountyIssued events from block 0 (the beginning of blockchain) to the latest
+    // Next, we use the .on callback which we'll use to process each event we receive
+    // When we receive an event we simply copy the current bounties array and push the event args into it and set that as our new bounties state.
+
   addEventListener(component) {
 
     this.state.bountiesInstance.events.BountyIssued({fromBlock: 0, toBlock: 'latest'})
-    .on('data', function(event){
-      console.log(event); // same results as the optional callback above
-      var newBountiesArray = component.state.bounties.slice()
+    .on('data', function(event){ //'data' is part of the syntax.
+      console.log(event); // same results as the optional callback above returnValues: Object {} 
+      var newBountiesArray = component.state.bounties
       newBountiesArray.push(event.returnValues)
       component.setState({ bounties: newBountiesArray })
     })
@@ -99,45 +131,48 @@ class App extends Component {
     }
   }
 
+  // Handle form submit
+
+    // We add the issueBounty callback to handle the event which happens when the user submits the form. 
+    // This function takes the current form input values from the component state, and use the bountiesInstance object to construct and 
+    // send an issueBounty transaction with the form inputs as arguments.
+
   async handleIssueBounty(event)
   {
     if (typeof this.state.bountiesInstance !== 'undefined') {
       event.preventDefault();
-      //const ipfsHash = await setJSON({ bountyData: this.state.bountyData });
-      let result = await this.state.bountiesInstance.methods.issueBounty(this.state.bountyData,this.state.bountyDeadline,{from: this.state.account, value: this.state.web3.utils.toWei(this.state.bountyAmount, 'ether')})
-      this.setLastTransactionDetails(result)
-    }
-  }
-
-  setLastTransactionDetails(result)
-  {
-    if(result.tx !== 'undefined')
-    {
-      this.setState({etherscanLink: etherscanBaseUrl+"/tx/"+result.tx})
-    }
-    else
-    {
-      this.setState({etherscanLink: etherscanBaseUrl})
+      await this.state.bountiesInstance.methods.issueBounty(this.state.bountyData,this.state.bountyDeadline).send({from: this.state.account, value: this.state.web3.utils.toWei(this.state.bountyAmount, 'ether')})
     }
   }
 
   render() {
+
+    // Successful Loading screen.
+
     if (!this.state.web3) {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
+
+    // App
+
     return (
+
       <div className="App">
+      
+      <br/>
+
       <Grid>
-      <Row>
-      <a href={this.state.etherscanLink} target="_blank" rel="noopener noreferrer">Last Transaction Details</a>
-      </Row>
+
       <Row>
       <Panel>
-      <Panel.Heading>Issue Bounty</Panel.Heading>
+          <Panel.Heading>Issue Bounty</Panel.Heading>
+
+        {/* This line will call async handleIssueBounty(event) on line 133*/}
+
+
       <Form onSubmit={this.handleIssueBounty}>
-          <FormGroup
-            controlId="fromCreateBounty"
-          >
+          <FormGroup controlId="fromCreateBounty">
+
             <FormControl
               componentClass="textarea"
               name="bountyData"
@@ -145,6 +180,7 @@ class App extends Component {
               placeholder="Enter bounty details"
               onChange={this.handleChange}
             />
+
             <HelpBlock>Enter bounty data</HelpBlock><br/>
 
             <FormControl
@@ -154,6 +190,7 @@ class App extends Component {
               placeholder="Enter bounty deadline"
               onChange={this.handleChange}
             />
+
             <HelpBlock>Enter bounty deadline in seconds since epoch</HelpBlock><br/>
 
             <FormControl
@@ -163,27 +200,41 @@ class App extends Component {
               placeholder="Enter bounty amount"
               onChange={this.handleChange}
             />
+
             <HelpBlock>Enter bounty amount</HelpBlock><br/>
+
             <Button type="submit">Issue Bounty</Button>
+
           </FormGroup>
       </Form>
+
       </Panel>
       </Row>
+      
+
+
+
+
       <Row>
       <Panel>
-      <Panel.Heading>Issued Bounties</Panel.Heading>
-      <BootstrapTable data={this.state.bounties} striped hover>
+          <Panel.Heading>Issued Bounties</Panel.Heading>
+      
+      <BootstrapTable data={this.state.bounties}>
+
         <TableHeaderColumn isKey dataField='bounty_id'>ID</TableHeaderColumn>
         <TableHeaderColumn dataField='issuer'>Issuer</TableHeaderColumn>
         <TableHeaderColumn dataField='amount'>Amount</TableHeaderColumn>
         <TableHeaderColumn dataField='data'>Bounty Data</TableHeaderColumn>
+
       </BootstrapTable>
+
       </Panel>
       </Row>
+      
+
       </Grid>
 
-
-            </div>
+      </div>
     );
   }
 }
