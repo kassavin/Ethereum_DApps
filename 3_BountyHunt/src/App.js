@@ -9,6 +9,7 @@ import TableHeaderColumn from 'react-bootstrap-table/lib/TableHeaderColumn';
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 
 import Button from 'react-bootstrap/lib/Button';
+
 import Form from 'react-bootstrap/lib/Form';
 import FormGroup from 'react-bootstrap/lib/FormGroup';
 import FormControl from 'react-bootstrap/lib/FormControl';
@@ -161,6 +162,7 @@ class App extends Component {
 
       </Grid>
       </div>
+
     );
   }
 }
