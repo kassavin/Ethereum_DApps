@@ -1,5 +1,5 @@
-var Bounties = artifacts.require("./Bounties.sol");
+const DApp = artifacts.require("DApp");
 
 module.exports = function(deployer) {
-  deployer.deploy(Bounties);
+  deployer.deploy(DApp);
 };

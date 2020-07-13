@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "ipfs-mini": "^1.1.2",
+    "@truffle/hdwallet-provider": "1.0.38",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-table": "^4.3.1",
