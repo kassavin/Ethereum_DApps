@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Ethereum_DApps/5_String_Handling/build/static/css/main.dc0a14bb.chunk.css",
+    "main.js": "/Ethereum_DApps/5_String_Handling/build/static/js/main.dce9cfe7.chunk.js",
+    "main.js.map": "/Ethereum_DApps/5_String_Handling/build/static/js/main.dce9cfe7.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/5_String_Handling/build/static/js/runtime-main.1932edd0.js",
+    "runtime-main.js.map": "/Ethereum_DApps/5_String_Handling/build/static/js/runtime-main.1932edd0.js.map",
+    "static/js/2.e04050e8.chunk.js": "/Ethereum_DApps/5_String_Handling/build/static/js/2.e04050e8.chunk.js",
+    "static/js/2.e04050e8.chunk.js.map": "/Ethereum_DApps/5_String_Handling/build/static/js/2.e04050e8.chunk.js.map",
+    "index.html": "/Ethereum_DApps/5_String_Handling/build/index.html",
+    "precache-manifest.1e1c92383e2127980b1ed24fa733a67f.js": "/Ethereum_DApps/5_String_Handling/build/precache-manifest.1e1c92383e2127980b1ed24fa733a67f.js",
+    "service-worker.js": "/Ethereum_DApps/5_String_Handling/build/service-worker.js",
+    "static/css/main.dc0a14bb.chunk.css.map": "/Ethereum_DApps/5_String_Handling/build/static/css/main.dc0a14bb.chunk.css.map",
+    "static/js/2.e04050e8.chunk.js.LICENSE.txt": "/Ethereum_DApps/5_String_Handling/build/static/js/2.e04050e8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1932edd0.js",
+    "static/js/2.e04050e8.chunk.js",
+    "static/css/main.dc0a14bb.chunk.css",
+    "static/js/main.dce9cfe7.chunk.js"
+  ]
+}
