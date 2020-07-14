@@ -31,4 +31,10 @@ Framework: React and @drizzle/store.
 
  * [DApp](5_String_Handling/build)
 
+### 6. Unbox Drizzle
+This DApp contains three Drizzle examples. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](6_Unbox_Drizzle/build)
+
  
