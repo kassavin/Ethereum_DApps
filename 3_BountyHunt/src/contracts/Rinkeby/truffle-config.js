@@ -1,5 +1,3 @@
-const path = require("path");
-
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 const mnemonic = "misery capable idle agree real tennis exchange forget spy copy cart minute";

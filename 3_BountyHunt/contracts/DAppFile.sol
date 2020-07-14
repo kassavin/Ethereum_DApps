@@ -2,6 +2,8 @@
 pragma solidity >=0.6.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
+// https://kauri.io/truffle-adding-a-frontend-with-react-box/86903f66d39d4379a2e70bd583700ecf/a 
+
 contract DApp {
 
   event BountyIssued(uint bounty_id, address issuer, uint amount, string data);
