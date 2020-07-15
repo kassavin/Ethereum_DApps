@@ -37,4 +37,11 @@ Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plug
 
  * [DApp](6_Unbox_Drizzle/build)
 
+### 7. Drizzle Events
+This DApp contains a Drizzle Event example. <br/> 
+Framework: React, Redux, React-Redux, React-Toastify, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](7_Drizzle_Event/build)
+
+
  

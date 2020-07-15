@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Ethereum_DApps/7_Drizzle_Event/build/static/css/main.222aa93b.chunk.css",
+    "main.js": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/main.8b3fb738.chunk.js",
+    "main.js.map": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/main.8b3fb738.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/runtime-main.83ab5f75.js",
+    "runtime-main.js.map": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/runtime-main.83ab5f75.js.map",
+    "static/css/2.f42e59c9.chunk.css": "/Ethereum_DApps/7_Drizzle_Event/build/static/css/2.f42e59c9.chunk.css",
+    "static/js/2.5915ccd3.chunk.js": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/2.5915ccd3.chunk.js",
+    "static/js/2.5915ccd3.chunk.js.map": "/Ethereum_DApps/7_Drizzle_Event/build/static/js/2.5915ccd3.chunk.js.map",
+    "index.html": "/Ethereum_DApps/7_Drizzle_Event/build/index.html",
+    "precache-manifest.3f623704f4e3640b695f47e2fde0cdb4.js": "/Ethereum_DApps/7_Drizzle_Event/build/precache-manifest.3f623704f4e3640b695f47e2fde0cdb4.js",
+    "service-worker.js": "/Ethereum_DApps/7_Drizzle_Event/build/service-worker.js",
+    "static/css/2.f42e59c9.chunk.css.map": "/Ethereum_DApps/7_Drizzle_Event/build/static/css/2.f42e59c9.chunk.css.map",
+    "static/css/main.222aa93b.chunk.css.map": "/Ethereum_DApps/7_Drizzle_Event/build/static/css/main.222aa93b.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83ab5f75.js",
+    "static/css/2.f42e59c9.chunk.css",
+    "static/js/2.5915ccd3.chunk.js",
+    "static/css/main.222aa93b.chunk.css",
+    "static/js/main.8b3fb738.chunk.js"
+  ]
+}
