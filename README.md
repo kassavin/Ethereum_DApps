@@ -43,5 +43,11 @@ Framework: React, Redux, React-Redux, React-Toastify, @drizzle/store, @drizzle/r
 
  * [DApp](7_Drizzle_Event/build)
 
+### 10. ERC20_Tokens
+This DApp allows any user to transfer a ERC20 Token. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](10_ERC20_Tokens/build)
+
 
  

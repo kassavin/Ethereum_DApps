@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/main.20b3e4f8.chunk.js",
+    "main.js.map": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/main.20b3e4f8.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/runtime-main.fe9bdc59.js",
+    "runtime-main.js.map": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/runtime-main.fe9bdc59.js.map",
+    "static/js/2.56e0ffa2.chunk.js": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/2.56e0ffa2.chunk.js",
+    "static/js/2.56e0ffa2.chunk.js.map": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/2.56e0ffa2.chunk.js.map",
+    "index.html": "/Ethereum_DApps/10_ERC20_Tokens/build/index.html",
+    "precache-manifest.17eb9c7d61caf8a68e5367fcd988ce2d.js": "/Ethereum_DApps/10_ERC20_Tokens/build/precache-manifest.17eb9c7d61caf8a68e5367fcd988ce2d.js",
+    "service-worker.js": "/Ethereum_DApps/10_ERC20_Tokens/build/service-worker.js",
+    "static/js/2.56e0ffa2.chunk.js.LICENSE.txt": "/Ethereum_DApps/10_ERC20_Tokens/build/static/js/2.56e0ffa2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fe9bdc59.js",
+    "static/js/2.56e0ffa2.chunk.js",
+    "static/js/main.20b3e4f8.chunk.js"
+  ]
+}
