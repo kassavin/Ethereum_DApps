@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Ethereum_DApps/11_ICO/build/static/js/main.a9aac61c.chunk.js",
+    "main.js.map": "/Ethereum_DApps/11_ICO/build/static/js/main.a9aac61c.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/11_ICO/build/static/js/runtime-main.0909c5f4.js",
+    "runtime-main.js.map": "/Ethereum_DApps/11_ICO/build/static/js/runtime-main.0909c5f4.js.map",
+    "static/js/2.5909ad2b.chunk.js": "/Ethereum_DApps/11_ICO/build/static/js/2.5909ad2b.chunk.js",
+    "static/js/2.5909ad2b.chunk.js.map": "/Ethereum_DApps/11_ICO/build/static/js/2.5909ad2b.chunk.js.map",
+    "index.html": "/Ethereum_DApps/11_ICO/build/index.html",
+    "precache-manifest.cecd551913b079cb0baa6ed5af58f6c1.js": "/Ethereum_DApps/11_ICO/build/precache-manifest.cecd551913b079cb0baa6ed5af58f6c1.js",
+    "service-worker.js": "/Ethereum_DApps/11_ICO/build/service-worker.js",
+    "static/js/2.5909ad2b.chunk.js.LICENSE.txt": "/Ethereum_DApps/11_ICO/build/static/js/2.5909ad2b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0909c5f4.js",
+    "static/js/2.5909ad2b.chunk.js",
+    "static/js/main.a9aac61c.chunk.js"
+  ]
+}
