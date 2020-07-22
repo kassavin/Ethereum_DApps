@@ -49,5 +49,41 @@ Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plug
 
  * [DApp](10_ERC20_Tokens/build)
 
+### 10. ERC20_Tokens
+This DApp allows any user to transfer a ERC20 Token. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](10_ERC20_Tokens/build)
+
+### 11_ICO
+This DApp allows any user to purchase a ERC20 Token. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](11_ICO/build)
+
+### 12_ERC721
+This DApp allows the admin to generate a ERC721 <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](12_ERC721/build)
+
+### 13_Cryptorobots
+This DApp allows any user to manufacture cryptorobots <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](13_Cryptorobots/build)
+
+### 14_Social_Media
+This DApp allows any user to read and write messages. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](14_Social_Media/build)
+
+### 15_Marketplace
+This DApp allows any user to list and bid for items in auction. <br/> 
+Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
+
+ * [DApp](15_Marketplace/build)
+
 
  

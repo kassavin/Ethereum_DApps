@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/Ethereum_DApps/15_Marketplace/build/static/js/main.f3183659.chunk.js",
+    "main.js.map": "/Ethereum_DApps/15_Marketplace/build/static/js/main.f3183659.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/15_Marketplace/build/static/js/runtime-main.d79c79b0.js",
+    "runtime-main.js.map": "/Ethereum_DApps/15_Marketplace/build/static/js/runtime-main.d79c79b0.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Ethereum_DApps/15_Marketplace/build/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.6fded399.chunk.js": "/Ethereum_DApps/15_Marketplace/build/static/js/2.6fded399.chunk.js",
+    "static/js/2.6fded399.chunk.js.map": "/Ethereum_DApps/15_Marketplace/build/static/js/2.6fded399.chunk.js.map",
+    "index.html": "/Ethereum_DApps/15_Marketplace/build/index.html",
+    "precache-manifest.5710c0130ab033b58cf929ccfba2053f.js": "/Ethereum_DApps/15_Marketplace/build/precache-manifest.5710c0130ab033b58cf929ccfba2053f.js",
+    "service-worker.js": "/Ethereum_DApps/15_Marketplace/build/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Ethereum_DApps/15_Marketplace/build/static/css/2.af3c1da9.chunk.css.map",
+    "static/js/2.6fded399.chunk.js.LICENSE.txt": "/Ethereum_DApps/15_Marketplace/build/static/js/2.6fded399.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d79c79b0.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.6fded399.chunk.js",
+    "static/js/main.f3183659.chunk.js"
+  ]
+}

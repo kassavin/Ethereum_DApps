@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/Ethereum_DApps/14_Social_Media/build/static/js/main.bc2c1ce6.chunk.js",
+    "main.js.map": "/Ethereum_DApps/14_Social_Media/build/static/js/main.bc2c1ce6.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/14_Social_Media/build/static/js/runtime-main.8fcc77f2.js",
+    "runtime-main.js.map": "/Ethereum_DApps/14_Social_Media/build/static/js/runtime-main.8fcc77f2.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Ethereum_DApps/14_Social_Media/build/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7071999f.chunk.js": "/Ethereum_DApps/14_Social_Media/build/static/js/2.7071999f.chunk.js",
+    "static/js/2.7071999f.chunk.js.map": "/Ethereum_DApps/14_Social_Media/build/static/js/2.7071999f.chunk.js.map",
+    "index.html": "/Ethereum_DApps/14_Social_Media/build/index.html",
+    "precache-manifest.fcbaf9289d651cde6a0f3e89491bab23.js": "/Ethereum_DApps/14_Social_Media/build/precache-manifest.fcbaf9289d651cde6a0f3e89491bab23.js",
+    "service-worker.js": "/Ethereum_DApps/14_Social_Media/build/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Ethereum_DApps/14_Social_Media/build/static/css/2.af3c1da9.chunk.css.map",
+    "static/js/2.7071999f.chunk.js.LICENSE.txt": "/Ethereum_DApps/14_Social_Media/build/static/js/2.7071999f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8fcc77f2.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7071999f.chunk.js",
+    "static/js/main.bc2c1ce6.chunk.js"
+  ]
+}

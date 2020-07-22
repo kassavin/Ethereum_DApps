@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Ethereum_DApps/12_ERC721/build/static/js/main.a0560102.chunk.js",
+    "main.js.map": "/Ethereum_DApps/12_ERC721/build/static/js/main.a0560102.chunk.js.map",
+    "runtime-main.js": "/Ethereum_DApps/12_ERC721/build/static/js/runtime-main.ae70aaea.js",
+    "runtime-main.js.map": "/Ethereum_DApps/12_ERC721/build/static/js/runtime-main.ae70aaea.js.map",
+    "static/js/2.c1631822.chunk.js": "/Ethereum_DApps/12_ERC721/build/static/js/2.c1631822.chunk.js",
+    "static/js/2.c1631822.chunk.js.map": "/Ethereum_DApps/12_ERC721/build/static/js/2.c1631822.chunk.js.map",
+    "index.html": "/Ethereum_DApps/12_ERC721/build/index.html",
+    "precache-manifest.3e7a1332e7150afc30d8501e58781ce8.js": "/Ethereum_DApps/12_ERC721/build/precache-manifest.3e7a1332e7150afc30d8501e58781ce8.js",
+    "service-worker.js": "/Ethereum_DApps/12_ERC721/build/service-worker.js",
+    "static/js/2.c1631822.chunk.js.LICENSE.txt": "/Ethereum_DApps/12_ERC721/build/static/js/2.c1631822.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae70aaea.js",
+    "static/js/2.c1631822.chunk.js",
+    "static/js/main.a0560102.chunk.js"
+  ]
+}
