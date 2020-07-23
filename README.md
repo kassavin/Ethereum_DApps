@@ -62,13 +62,13 @@ Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plug
  * [DApp](11_ICO/build)
 
 ### 12_ERC721
-This DApp allows the admin to generate a ERC721 <br/> 
+This DApp allows the admin to generate a ERC721. <br/> 
 Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
 
  * [DApp](12_ERC721/build)
 
 ### 13_Cryptorobots
-This DApp allows any user to manufacture cryptorobots <br/> 
+This DApp allows any user to manufacture cryptorobots. <br/> 
 Framework: React, @drizzle/store, @drizzle/react-components, @drizzle/react-plugin. 
 
  * [DApp](13_Cryptorobots/build)
