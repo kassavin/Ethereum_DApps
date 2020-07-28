@@ -8,7 +8,7 @@ Framework: -
  * [DApp](1_Number/src/index.html)
 
 ### 2. Store a Nickname
-This DApp allows any user to store a nickname.<br/> 
+This DApp allows any user to store their nickname.<br/> 
 Framework: -
 
  * [DApp](2_Nickname/src/index.html)
